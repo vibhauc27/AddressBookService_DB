@@ -21,3 +21,15 @@ PhoneNumber bigint,
 Email varchar(100)
 );
 select * from AddressBook_Table;
+
+--UC3 
+--Ability to insert new Contacts to Address Book
+
+insert into AddressBook_Table(FirstName, LastName, Address, City, State, Zip, PhoneNumber, Email)
+values
+('Moxie', 'Steve', 'Panji', 'Goa', 'Goa', 123456, 124567890, 'Moxie@gmail.com'),
+('Vibha', 'Rao', 'Sagar', 'Sagar', 'Karnataka', 456123, 7894561230, 'vba@gmail.com'),
+('Vind', 'Shah', 'HBR Nagar', 'Delhi', 'Delhi', 560037, 4567891230, 'vind@gmail.com'),
+('Choii', 'Hegde', 'Kalyan Nagar', 'Bangalore', 'Karnataka', 560103, 0456123895, 'Choii@gmail.com');
+
+select * from AddressBook_Table;
