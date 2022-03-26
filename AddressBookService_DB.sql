@@ -75,3 +75,9 @@ update AddressBook_Table set ContactType='Family' where FirstName='Moxie';
 update AddressBook_Table set ContactType='Friends' where FirstName='Vibha' or FirstName='Vind';
 
 select * from AddressBook_Table;
+
+
+--UC10 
+--Ability to get number of contact persons i.e. count by type
+
+select COUNT(ContactType) as TypeCount, ContactType from AddressBook_Table group by ContactType;
