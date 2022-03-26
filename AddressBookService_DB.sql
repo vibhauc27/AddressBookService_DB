@@ -40,3 +40,10 @@ select * from AddressBook_Table;
 update AddressBook_Table set City = 'Pune' where FirstName = 'Moxie';
 update AddressBook_Table set State = 'MP' where LastName = 'Hegde';
 select * from AddressBook_Table;
+
+
+--UC5 
+--Ability to delete a person using person's name
+
+delete from AddressBook_Table where FirstName = 'Choii';
+select * from AddressBook_Table;
