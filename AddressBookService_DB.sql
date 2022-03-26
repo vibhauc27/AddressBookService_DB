@@ -47,3 +47,9 @@ select * from AddressBook_Table;
 
 delete from AddressBook_Table where FirstName = 'Choii';
 select * from AddressBook_Table;
+
+
+--UC6
+--Ability to Retrieve Person belonging to a City or State from the Address Book 
+
+select * from AddressBook_Table where City = 'Pune' or State = 'Karnataka';
