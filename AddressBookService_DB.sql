@@ -53,3 +53,11 @@ select * from AddressBook_Table;
 --Ability to Retrieve Person belonging to a City or State from the Address Book 
 
 select * from AddressBook_Table where City = 'Pune' or State = 'Karnataka';
+
+
+--UC7 
+--Ability to understand the size of address book by City and State 
+
+select COUNT(*) as StateCount, State from AddressBook_Table group by State;
+select COUNT(*) as CityCount, City  from AddressBook_Table group by City;
+
