@@ -61,3 +61,7 @@ select * from AddressBook_Table where City = 'Pune' or State = 'Karnataka';
 select COUNT(*) as StateCount, State from AddressBook_Table group by State;
 select COUNT(*) as CityCount, City  from AddressBook_Table group by City;
 
+--UC8 
+--Ability to retrieve entries sorted alphabetically by Person’s name for a given city
+
+select * from AddressBook_Table order by FirstName;
