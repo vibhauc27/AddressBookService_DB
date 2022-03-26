@@ -65,3 +65,13 @@ select COUNT(*) as CityCount, City  from AddressBook_Table group by City;
 --Ability to retrieve entries sorted alphabetically by Person’s name for a given city
 
 select * from AddressBook_Table order by FirstName;
+
+
+--UC9
+--Ability to identify each Address Book with name and Type.
+
+alter table AddressBook_Table add ContactType varchar(100);
+update AddressBook_Table set ContactType='Family' where FirstName='Moxie';
+update AddressBook_Table set ContactType='Friends' where FirstName='Vibha' or FirstName='Vind';
+
+select * from AddressBook_Table;
