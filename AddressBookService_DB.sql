@@ -33,3 +33,10 @@ values
 ('Choii', 'Hegde', 'Kalyan Nagar', 'Bangalore', 'Karnataka', 560103, 0456123895, 'Choii@gmail.com');
 
 select * from AddressBook_Table;
+
+--UC4 
+--Ability to edit existing contact person using their name
+
+update AddressBook_Table set City = 'Pune' where FirstName = 'Moxie';
+update AddressBook_Table set State = 'MP' where LastName = 'Hegde';
+select * from AddressBook_Table;
